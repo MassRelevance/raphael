@@ -25,7 +25,6 @@
 // │ Author Dmitry Baranovskiy (http://dmitry.baranovskiy.com/) │ \\
 // └────────────────────────────────────────────────────────────┘ \\
 
-define([], function () {
   (function (glob) {
       var version = "0.4.2",
           has = "hasOwnProperty",
@@ -8023,6 +8022,3 @@ define([], function () {
   
       return R;
   }));
-  
-  return window.Raphael;
-});
