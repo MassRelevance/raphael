@@ -14,6 +14,7 @@
   // └──────────────────────────────────────────────────────────────────────────────────────┘ \\
   
 define([], function () {
+
   (function (glob) {
       var version = "0.3.4",
           has = "hasOwnProperty",
@@ -5500,4 +5501,6 @@ define([], function () {
           })(method);
       }
   }(window.Raphael);
+  
+  return window.Raphael;
 }));
