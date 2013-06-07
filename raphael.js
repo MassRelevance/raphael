@@ -13,8 +13,6 @@
   // │ Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) license. │ \\
   // └──────────────────────────────────────────────────────────────────────────────────────┘ \\
   
-define([], function () {
-
   (function (glob) {
       var version = "0.3.4",
           has = "hasOwnProperty",
@@ -231,6 +229,8 @@ define([], function () {
   // │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
   // │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
   // └─────────────────────────────────────────────────────────────────────┘ \\
+
+define(['eve'], function (eve) {
   (function () {
       
       function R(first) {
@@ -5503,4 +5503,4 @@ define([], function () {
   }(window.Raphael);
   
   return window.Raphael;
-}));
+});
