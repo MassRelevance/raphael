@@ -208,7 +208,7 @@
     eve.toString = function () {
         return "You are running Eve " + version;
     };
-    (typeof module != "undefined" && module.exports) ? (module.exports = eve) : (glob.eve = eve);
+    (typeof module != "undefined" && module.exports) ? (module.exports = eve) : (typeof define != "undefined" ? (define("eve", [], function() { return eve; })) : (glob.eve = eve));
 })(this);
 
 // ┌─────────────────────────────────────────────────────────────────────┐ \\
@@ -218,6 +218,8 @@
 // │ Copyright (c) 2008-2011 Sencha Labs (http://sencha.com)             │ \\
 // │ Licensed under the MIT (http://raphaeljs.com/license.html) license. │ \\
 // └─────────────────────────────────────────────────────────────────────┘ \\
+
+define(['eve'], function (eve) {
 (function () {
     
     function R(first) {
@@ -5434,3 +5436,7 @@ window.Raphael.vml && function (R) {
         })(method);
     }
 }(window.Raphael);
+
+return window.Raphael;
+
+});

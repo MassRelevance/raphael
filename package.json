@@ -1,0 +1,20 @@
+{
+  "name": "raphael",
+  "version": "2.0.0-mr",
+  "description": "JavaScript Vector Library",
+  "main": "raphael.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DmitryBaranovskiy/raphael.git"
+  },
+  "author": "Dmitry Baranovskiy",
+  "license": "MIT",
+  "readmeFilename": "README.markdown",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.2.0"
+  }
+}
